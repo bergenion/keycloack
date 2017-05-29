@@ -102,13 +102,14 @@ th.w-40 {
     height: 26px;
     position: relative;
     width: 62px;
+    outline: none;
 }
 .onoffswitch .onoffswitch-checkbox {
     display: none;
 }
 .onoffswitch .onoffswitch-label {
-    border: 1px solid #bbb;
-    border-radius: 2px;
+    /* border: 1px solid #bbb; */
+    /* border-radius: 2px; */
     cursor: pointer;
     display: block;
     overflow: hidden;
@@ -117,7 +118,7 @@ th.w-40 {
 .onoffswitch .onoffswitch-inner {
     display: block;
     margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
+    transition:  0.3s all;
     width: 200%;
 }
 .onoffswitch .onoffswitch-inner > span {
@@ -133,32 +134,25 @@ th.w-40 {
     width: 50%;
 }
 .onoffswitch .onoffswitch-switch {
-    background-image: linear-gradient(top, #fafafa 0%, #ededed 100%);
-    background-image: -o-linear-gradient(top, #fafafa 0%, #ededed 100%);
-    background-image: -moz-linear-gradient(top, #fafafa 0%, #ededed 100%);
-    background-image: -webkit-linear-gradient(top, #fafafa 0%, #ededed 100%);
-    background-image: -ms-linear-gradient(top, #fafafa 0%, #ededed 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(1, 0, #ededed));
-    border: 1px solid #aaa;
-    border-radius: 2px;
-    bottom: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 21px;
     margin: 0;
     position: absolute;
     right: 39px;
     top: 0;
-    transition: all 0.3s ease-in 0s;
-    -webkit-transition: all 0.3s ease-in 0s;
-    width: 23px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    width: 24px;
+    height: 24px;
 }
 .onoffswitch .onoffswitch-inner .onoffswitch-active {
-    background-image: linear-gradient(top, #00a9ec 0%, #009bd3 100%);
-    background-image: -o-linear-gradient(top, #00a9ec 0%, #009bd3 100%);
-    background-image: -moz-linear-gradient(top, #00a9ec 0%, #009bd3 100%);
-    background-image: -webkit-linear-gradient(top, #00a9ec 0%, #009bd3 100%);
-    background-image: -ms-linear-gradient(top, #00a9ec 0%, #009bd3 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #00a9ec), color-stop(1, 0, #009bd3));
     color: #FFFFFF;
     padding-left: 10px;
+    background-color: #9E74B3;
+    border-radius: 18px;
+    outline: none;
+    user-select: none;
 }
 .onoffswitch-checkbox:disabled + .onoffswitch-label .onoffswitch-inner .onoffswitch-active,
 .onoffswitch-checkbox:disabled + .onoffswitch-label .onoffswitch-inner .onoffswitch-inactive {
@@ -167,16 +161,17 @@ th.w-40 {
     color: #9d9fa1;
 }
 .onoffswitch .onoffswitch-inner .onoffswitch-inactive {
-    background: linear-gradient(#fefefe, #e8e8e8) repeat scroll 0 0 transparent;
+    background-color: #E4E9EB;
     color: #4d5258;
     padding-right: 10px;
+    border-radius: 18px;
     text-align: right;
 }
 .onoffswitch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
 .onoffswitch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0;
+    right: -1px;
 }
 
 

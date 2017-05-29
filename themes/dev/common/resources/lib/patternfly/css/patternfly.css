@@ -2531,26 +2531,22 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 26px;
+  height: 34px;
   padding: 2px 6px;
   font-size: 12px;
-  line-height: 1.66666667;
-  color: #333333;
+  line-height: 35px;
+  color: #1CC7A5;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #bababa;
+  border: 1px solid #1CC7A5;
   border-radius: 1px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  outline: none;
+  box-shadow: 0px 0px 1px 1px #1CC7A5;
 }
 .form-control::-moz-placeholder {
   color: #999999;
@@ -2623,7 +2619,7 @@ input[type="search"] {
   }
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .radio,
 .checkbox {
@@ -2970,8 +2966,9 @@ select[multiple].form-group-lg .form-control {
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
-    text-align: right;
+    text-align: left;
     margin-bottom: 0;
+    padding-left: 60px;
     padding-top: 3px;
   }
 }
@@ -3892,7 +3889,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 .nav > li.disabled > a {
   color: #999999;
@@ -3939,11 +3935,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #0099d3;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-bottom-color: transparent;
-  cursor: default;
+  color: #1CC7A5;
+  border-bottom: 3px solid rgb(28, 199, 165);
+  cursor: pointer;
 }
 .nav-tabs.nav-justified {
   width: 100%;
@@ -7025,6 +7019,7 @@ button.close {
 }
 .fa-question-circle:before {
   content: "\f059";
+  background: #9e74b3;
 }
 .fa-info-circle:before {
   content: "\f05a";
@@ -9731,6 +9726,10 @@ fieldset[disabled] .form-control {
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #969696;
+  border: none;
+  background: none;
+  color: black;
+  font-weight: 600;
 }
 .form-control:hover {
   border-color: #7bb2dd;
@@ -11569,9 +11568,8 @@ td > .progress:first-child:last-child {
 .nav-tabs > li > a:active,
 .nav-tabs > li > a:focus,
 .nav-tabs > li > a:hover {
-  background: transparent;
-  border-color: #e9e8e8;
   color: #222222;
+  border-bottom: 3px solid rgba(28, 199, 165,0.5);
 }
 .nav-tabs > li > .dropdown-menu {
   border-top: 0;
