@@ -2538,7 +2538,7 @@ output {
   color: #1CC7A5;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #1CC7A5;
+  border: 1px solid #e3e3e3;
   border-radius: 1px;
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -7020,6 +7020,7 @@ button.close {
 .fa-question-circle:before {
   content: "\f059";
   background: #9e74b3;
+  border-radius: 10px;
 }
 .fa-info-circle:before {
   content: "\f05a";
@@ -9732,7 +9733,7 @@ fieldset[disabled] .form-control {
   font-weight: 600;
 }
 .form-control:hover {
-  border-color: #7bb2dd;
+  border-color: #1CC7A5;
 }
 .has-error .form-control:hover {
   border-color: #843534;
